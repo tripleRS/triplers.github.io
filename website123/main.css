@@ -1,37 +1,317 @@
 body {
     font-family: 'Poppins', sans-serif;
+    padding: 0 40px 40px 40px;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #d63031;
+    background-color: #7f78d2;
     height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
-.halaman-utama{
-    height: 400px;
-    background-color: #00b894;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px 20px 40px;
 }
 
-.halaman-tambahan{
-    height: 250px;
+.header-list {
+    float: right;
+    
+}
+
+.header-list li {
+    padding: 16px 20px 33px 20px;
+    
+}
+
+.halaman-utama{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 25px 0px;
+    padding: 15px;
+}
+
+.konten.teks {
+    flex: 1;
+}
+
+.konten.gambar{
+    flex: 1;
+    text-align: center;
+}
+
+
+.intro-body {
+    font-size: 18px;
+    font-weight: bold;
+    color: #979797;
+    margin: 0px 0px 0px 0px;
+}
+
+.main-img {
+    height: 400px;
+}
+
+.title-body {
+    font-size: 60px;
+    font-weight: bold;
+    color: #7f78d2;
+    margin: 0px 0px 20px 0px;
+    animation-name: example;
+    animation-duration: 12s;
+}
+
+@keyframes example {
+    0%   {color: #a29bfe;}
+    25%  {color: #32ce54;}
+    50%  {color: rgb(255, 0, 43);}
+    100% {color: rgb(5, 5, 5);}
+}
+
+.halaman-utama small {
+    font-size: 16px;
+    color: #979797;
+}
+
+.body-margin {
+    margin: 0px 0px 30px 0px;
+}
+
+.p-body {
+    font-size: 16px;
+    font-weight: bold;
+    color: #979797;
+}
+
+.button-body {
+    transition-duration: 0.4s;
+}
+
+.button-body:hover {
     background-color: #a29bfe;
+    /* Green */
+    color: white;
+}
+
+.lesson-wrapper {
+    padding-bottom: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+    display: flex;
+}
+
+.heading {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    color: #5f5d60;
+    text-align: center;
+}
+
+.heading h2 {
+    font-weight: normal;
+    color: black;
+}
+
+.lessons{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.lesson {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lesson-icon {
+    position: relative;
+}
+
+.lesson-icon p {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    color: white;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.lesson-icon h3 {
+    padding-left: 33.5px;
+    padding-right: 33.5px;
+}
+
+.lesson-icon img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 15px;
+    text-align: center;
+    color: #b3aeb5;
+}
+
+.section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.contact-form input,
+textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+    background-color: #dee7ec;
+    margin-left: 20px;
+    margin-right: 25px;
+    color: black;
+    opacity: 0.5;
+    border: 1px solid black;
+}
+
+.contact-submit:hover {
+    background-color: #dee7ec;
+    color: black;
+    opacity: 1.0;
+}
+
+.contact-submit:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+    border: 0px solid black
 }
 
 footer {
+    margin-top: 25px;
     height: 130px;
     background-color: #2d3436;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+
+    .halaman-utama {
+        flex-direction: column;
+    }
+
+    .konten.teks {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    
+    .konten.gambar{
+        text-align: center;
+    }
+
+    .main-img {
+        height: 300px;
+    }
+
+    .lessons{
+        flex-direction: column;
+    }
+
+    
+    .contact-form {
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .contact-form input,
+    textarea {
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 20px;
+        font-size: 18px;
+        border: 1px solid #dee7ec;
+    }
+
+    .section-title {
+        border-bottom: 2px solid #dee7ec;
+        font-size: 28px;
+        padding-bottom: 15px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    header {
+        background-color: #7f78d2;
+        height: 400px;
+        color: white;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 25px;
+        height: 400px;
+        background-color: #2d3436;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .konten.teks {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    
+    .konten.gambar{
+        text-align: center;
+    }
+
+    .main-img {
+        height: 350px;
+    }
+
+    
+    
 }
