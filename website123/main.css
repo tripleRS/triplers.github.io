@@ -1,0 +1,37 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #d63031;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.halaman-utama{
+    height: 400px;
+    background-color: #00b894;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halaman-tambahan{
+    height: 250px;
+    background-color: #a29bfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 130px;
+    background-color: #2d3436;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
